@@ -12,7 +12,11 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		dryRun = !true,
 		snippets = SnippetType.CAMELCASE, 
 		glue = "stepDefenetion", 
-		monochrome = true
+		monochrome = true,
+		plugin = {"pretty", 
+				"html:target/result.html",
+				"json:target/result.json",
+				"junit:target/result.xml"}
 		)
 
 public class RunSearch {
