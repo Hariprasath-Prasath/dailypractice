@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		features = "src\\test\\resources\\Features\\Senario.feature",
 		dryRun = !true,
 		snippets = SnippetType.CAMELCASE, 
-		glue = "stepDefenetion", 
+		glue = "stepDefenetion",
 		monochrome = true,
 		plugin = {"pretty", 
 				"html:target/result.html",
