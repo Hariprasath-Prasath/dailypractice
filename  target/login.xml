@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="10.673" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="user validate log in functionality" name="User validate the login page with valid Credential" time="6.597">
+<system-out><![CDATA[
+Given User navigate to the log web application..............................passed
+And User Enter user "OmrGreens".............................................passed
+And User Enter password "1YU0EO"............................................passed
+When user click the log in botton...........................................passed
+Then User navigate to next page.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user validate log in functionality" name="User validate the login page with invalid Credential" time="3.854">
+<system-out><![CDATA[
+Given User navigate to the log web application..............................passed
+And User Enter user "OmrGreens".............................................passed
+And User Enter password "Hi"................................................passed
+When user click the log in botton...........................................passed
+But invalid login error massage should display..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

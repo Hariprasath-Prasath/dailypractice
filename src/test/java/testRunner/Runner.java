@@ -12,7 +12,13 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		dryRun = !true,
 		snippets = SnippetType.CAMELCASE,
 		glue = "stepDefenetion", 
-		monochrome = true
+		monochrome = true, 
+		plugin = {"pretty",
+				"html:target/login.html",
+				"json:target/login.json",
+				"junit: target/login.xml"
+				
+		}
 		)
 
 public class Runner {
